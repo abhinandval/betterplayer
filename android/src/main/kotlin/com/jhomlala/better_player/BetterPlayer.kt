@@ -542,7 +542,7 @@ internal class BetterPlayer(
                 }
             }
 
-            override fun onPlayerError(error: PlaybackException) {
+            override fun onPlayerError(error: ExoPlaybackException) {
                 eventSink.error("VideoError", "Video player had error $error", "")
             }
         })
